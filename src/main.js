@@ -1,3 +1,4 @@
+//import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.153.0/build/three.module.js';
 import * as THREE from 'three';
 import { ParametricGeometry } from 'three/examples/jsm/geometries/ParametricGeometry.js';
 import { ParametricGeometries } from 'three/examples/jsm/geometries/ParametricGeometries.js';
