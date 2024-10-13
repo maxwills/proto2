@@ -130,19 +130,6 @@ function init() {
     hemiLight.intensity = 2;
     scene.add( hemiLight );
 
-    // Add a floating div at the bottom of the page with some usage hints to rotate and zoom
-    const div = document.createElement('div');
-    div.style.position = 'absolute';
-    div.style.bottom = '0';
-    div.style.width = '100%';
-
-    const p = document.createElement('p');
-    p.style.textAlign = 'center';
-    p.style.color = 'white';
-    p.textContent = 'Drag to rotate, scroll to zoom';
-    div.appendChild(p);
-    document.body.appendChild(div);
-
 }
 
 function onWindowResize() {
