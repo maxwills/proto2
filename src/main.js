@@ -48,7 +48,7 @@ function showGUI(segments){
     gui.domElement.style.position = 'absolute';
     gui.domElement.style.top = '0px';
     gui.domElement.style.right = '0px';
-    // gui.domElement.style.zIndex = '1';
+    gui.domElement.style.zIndex = '1000';
 
     // we add checkboxes to toggle visibility of each segment
 
@@ -129,6 +129,20 @@ function init() {
     //increase the intensity of the light
     hemiLight.intensity = 2;
     scene.add( hemiLight );
+
+    // Add a floating div at the bottom of the page with some usage hints to rotate and zoom
+    const div = document.createElement('div');
+    div.style.position = 'absolute';
+    div.style.bottom = '0';
+    div.style.width = '100%';
+
+    const p = document.createElement('p');
+    p.style.textAlign = 'center';
+    p.style.color = 'white';
+    p.textContent = 'Drag to rotate, scroll to zoom';
+    div.appendChild(p);
+    document.body.appendChild(div);
+
 }
 
 function onWindowResize() {
